@@ -2,6 +2,13 @@
 
 Thank you for contributing to this project! Please follow the guidelines below to ensure a smooth collaboration.
 
+## Repository Structure
+
+- **packages**: Contains all the tools.
+- **portal**: Contains a list of example metadata displayed on the BNB Chain Developer Portal.
+- **python**: Contains Python version examples.
+- **typescript**: Contains TypeScript version examples.
+
 ## Development Setup
 
 ### 1. Install Recommended Extensions for VS Code
@@ -16,8 +23,8 @@ To maintain code consistency, please install the following extensions before com
 1. Fork the repository.
 2. Create a feature branch.
 3. Follow the coding standards mentioned above.
-4. Create your example template in the appropriate folder and provide a preview for it.
-5. Write docs for your change.
+4. Create your example template in the appropriate folder and provide a preview.
+5. Write documentation for your changes.
 6. Submit a pull request for review.
 
 Happy coding! 🚀

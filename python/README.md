@@ -1,6 +1,6 @@
 # Python Examples
 
-This directory contains all Python-based examples for the BNBChain LangChain AgentKit.
+This directory contains all Python-based examples
 
 ## Structure
 

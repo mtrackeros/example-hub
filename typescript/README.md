@@ -1,6 +1,6 @@
 # TypeScript Examples
 
-This directory contains all TypeScript-based examples for the BNBChain LangChain AgentKit.
+This directory contains all TypeScript-based examples
 
 ## Structure
 
@@ -8,8 +8,4 @@ This directory contains all TypeScript-based examples for the BNBChain LangChain
 
 ## Getting Started
 
-Ensure you have Node.js installed and install dependencies before running the examples:
-
-```bash
-npm install
-```
+Ensure you have Node.js installed and install dependencies before running the examples
