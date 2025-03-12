@@ -6,9 +6,9 @@ A hub of frontend templates, agent kits, and smart contract examples for BNB Cha
 
 This repository contains various examples for different implementations. Below is a list of available examples and their corresponding locations.
 
-| Example Name      | Path                         |
-| ----------------- | ---------------------------- |
-| langchain-chatbot | `./python/langchain-chatbot` |
+| Name                                            | Language |
+| ----------------------------------------------- | -------- |
+| [langchain-chatbot](./python/langchain-chatbot) | python   |
 
 More examples will be added soon!
 
