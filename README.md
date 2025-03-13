@@ -1,14 +1,24 @@
 # Example Hub
 
-A hub of frontend templates, agent kits, and smart contract examples for BNB Chain developers. Build and innovate with ready-to-use resources.
+A hub of frontend, agent kits, and smart contract examples for BNB Chain developers. Build and innovate with ready-to-use resources.
+
+## Get Started
+
+If you want to quickly create a template, you can use our tool:
+
+```sh
+npx create-bnb@latest --example [example-name]
+```
+
+All available example names are listed in the [Example List](#example-list) table below.
 
 ## Example List
 
 This repository contains various examples for different implementations. Below is a list of available examples and their corresponding locations.
 
-| Name                                            | Language |
-| ----------------------------------------------- | -------- |
-| [langchain-chatbot](./python/langchain-chatbot) | python   |
+| Name                                                   | Language |
+| ------------------------------------------------------ | -------- |
+| [python/langchain-chatbot](./python/langchain-chatbot) | python   |
 
 More examples will be added soon!
 
