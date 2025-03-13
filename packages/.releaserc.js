@@ -59,13 +59,13 @@ module.exports = {
     ],
     ["@semantic-release/npm", { npmPublish: true }],
     "@semantic-release/github",
-    [
-      "@semantic-release/git",
-      {
-        message:
-          `chore(release): Bump ${pkgName} to ` +
-          "v${nextRelease.version} [skip ci]",
-      },
-    ],
+    // [
+    //   "@semantic-release/git",
+    //   {
+    //     message:
+    //       `chore(release): Bump ${pkgName} to ` +
+    //       "v${nextRelease.version} [skip ci]",
+    //   },
+    // ],
   ],
 };
