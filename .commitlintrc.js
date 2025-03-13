@@ -4,6 +4,7 @@ const path = require("path");
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
+    "subject-case": [2, "always", ["sentence-case"]],
     "scope-enum": async () => {
       const scopes = await getScopesFromGit();
       return [2, "always", scopes];

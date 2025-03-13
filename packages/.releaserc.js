@@ -1,3 +1,8 @@
+const args = process.argv.slice(2);
+const pkgArgs = args.find((it) => it.startsWith("--package=")) || [];
+const pkgName = pkgArgs.split("=")[1] || "no-release";
+const headerPattern = new RegExp(`^(\\w+)\\(${pkgName}\\):\\s+(.*)$`);
+
 module.exports = {
   branches: ["main"],
   plugins: [
@@ -6,7 +11,7 @@ module.exports = {
       {
         preset: "angular",
         parserOpts: {
-          headerPattern: /^(\w*)(create-bnb)\: (.*)$/,
+          headerPattern,
         },
       },
     ],
@@ -14,7 +19,7 @@ module.exports = {
       "@semantic-release/release-notes-generator",
       {
         parserOpts: {
-          headerPattern: /^(\w*)(create-bnb)\: (.*)$/,
+          headerPattern,
         },
       },
     ],
