@@ -62,7 +62,9 @@ module.exports = {
     [
       "@semantic-release/git",
       {
-        message: `chore(release): ${pkgName}@` + "${nextRelease.version}",
+        message:
+          `chore(release): Bump ${pkgName} to ` +
+          "v${nextRelease.version} [skip ci]",
       },
     ],
   ],
