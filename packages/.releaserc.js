@@ -57,13 +57,12 @@ module.exports = {
         },
       },
     ],
-    "@semantic-release/npm",
+    ["@semantic-release/npm", { npmPublish: true }],
     "@semantic-release/github",
     [
       "@semantic-release/git",
       {
-        message:
-          "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+        message: `chore(release): ${pkgName}@` + "${nextRelease.version}",
       },
     ],
   ],
