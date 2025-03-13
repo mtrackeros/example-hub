@@ -2,7 +2,7 @@
 
 A hub of frontend, agent kits, and smart contract examples for BNB Chain developers. Build and innovate with ready-to-use resources.
 
-## Get Started
+## Quick Start
 
 If you want to quickly create a template, you can use our tool:
 

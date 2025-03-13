@@ -1,10 +1,13 @@
 {
   "name": "create-bnb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CLI tool to create BNB Chain examples",
   "main": "dist/index.js",
   "bin": {
     "create-bnb": "./dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist"
