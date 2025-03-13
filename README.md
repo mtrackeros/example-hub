@@ -16,9 +16,10 @@ All available example names are listed in the [Example List](#example-list) tabl
 
 This repository contains various examples for different implementations. Below is a list of available examples and their corresponding locations.
 
-| Name                                                   | Language |
-| ------------------------------------------------------ | -------- |
-| [python/langchain-chatbot](./python/langchain-chatbot) | python   |
+| Name                                                   | Language   |
+| ------------------------------------------------------ | ---------- |
+| [python/langchain-chatbot](./python/langchain-chatbot) | python     |
+| [typescript/eliza-chatbot](./typescript/eliza-chatbot) | typescript |
 
 More examples will be added soon!
 

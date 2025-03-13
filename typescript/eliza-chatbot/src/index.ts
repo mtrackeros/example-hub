@@ -1,5 +1,11 @@
 import {
-  AgentRuntime, Character, elizaLogger, settings, stringToUuid, defaultCharacter, ModelProviderName,
+  AgentRuntime,
+  Character,
+  elizaLogger,
+  settings,
+  stringToUuid,
+  defaultCharacter,
+  ModelProviderName,
 } from '@elizaos/core';
 import { DirectClient } from '@elizaos/client-direct';
 import { getTokenForProvider, initializeDatabase, initializeDbCache } from './util.ts';
