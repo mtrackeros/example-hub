@@ -57,7 +57,10 @@ module.exports = {
         },
       },
     ],
-    ["@semantic-release/npm", { npmPublish: true }],
+    [
+      "@semantic-release/npm",
+      { npmPublish: true, pkgRoot: `packages/${pkgName}` },
+    ],
     "@semantic-release/github",
     // [
     //   "@semantic-release/git",

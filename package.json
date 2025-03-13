@@ -2,6 +2,7 @@
   "name": "example-hub",
   "version": "1.0.0",
   "description": "A hub of frontend, agent kits, and smart contract examples for BNB Chain developers. Build and innovate with ready-to-use resources.",
+  "private": true,
   "keywords": [
     "BNBChain",
     "Example",
