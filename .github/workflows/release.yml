@@ -23,19 +23,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Setup Node.js (v20+)
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-          registry-url: "https://registry.npmjs.org"
-
-      # Setup pnpm (using pnpm/action-setup@v4)
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: "8" # or whichever version of pnpm you prefer
-
       # Cache pnpm store for faster installs
       - name: Cache pnpm store
         uses: actions/cache@v3
@@ -44,6 +31,19 @@ jobs:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-
+
+      # Setup pnpm (using pnpm/action-setup@v4)
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+          run_install: true
+
+      # Setup Node.js (v20+)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+          cache: "pnpm"
 
       # Use sparse-checkout if releasing from bnb-chain example-hub (to avoid cloning the entire repo)
       # Here we assume that if the project input is not a URL, it is a bnb-chain example name.
