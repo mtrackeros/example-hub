@@ -56,11 +56,11 @@ jobs:
       # Publish to NPM and create GitHub release using semantic-release.
       # Note: To limit release notes to commits with the create-bnb theme, configure semantic-release (e.g. releaseRules)
       - name: Run semantic-release
-        working-directory: packages/${{ github.event.inputs.project }}
-        uses: cycjimmy/semantic-release-action@v4
-        with:
-          config_file: .releaserc.js
-          package: ${{ github.event.inputs.project }}
+        # working-directory: packages/${{ github.event.inputs.project }}
+        # uses: cycjimmy/semantic-release-action@v4
+        # with:
+        #   config_file: .releaserc.js
+        run: npx semantic-release -e ./packages/.releaserc.js --package=${{ github.event.inputs.project }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
