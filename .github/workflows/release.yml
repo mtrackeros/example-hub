@@ -59,3 +59,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           config_file: ".releaserc.js"
+          package: ${{ github.event.inputs.project }}
