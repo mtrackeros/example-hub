@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # Allows pushing changes and creating releases
-      packages: write # Allows publishing packages
+      issues: write
+      pull-requests: write
     steps:
       # Checkout repository
       - name: Checkout repository
