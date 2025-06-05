@@ -23,9 +23,11 @@ body:
   label: Self Check
   description: Please check these items before submitting
   options:
-    - label: I have searched for existing issues
+    - label: This is only for bug report, if you would like to ask a question, please head to [Discussions](https://github.com/bnb-chain/example-hub/discussions/categories/general).
       required: true
-    - label: I will use English to describe the issue
+    - label: I have searched for existing issues [search for existing issues](https://github.com/bnb-chain/example-hub/issues), including closed ones.
+      required: true
+    - label: I will use English to describe the bug
       required: true
 - type: textarea
   id: bug-description

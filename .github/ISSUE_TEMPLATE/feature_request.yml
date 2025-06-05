@@ -17,7 +17,9 @@ body:
   label: Self Check
   description: Please check these items before submitting
   options:
-    - label: I have searched for existing feature requests
+    - label: This is only for feature request, if you would like to ask a question, please head to [Discussions](https://github.com/bnb-chain/example-hub/discussions/categories/general).
+      required: true
+    - label: I have searched for existing feature requests [search for existing feature requests](https://github.com/bnb-chain/example-hub/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement), including closed ones.
       required: true
     - label: I will use English to describe the feature request
       required: true
