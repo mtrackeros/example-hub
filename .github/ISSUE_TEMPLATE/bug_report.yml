@@ -1,67 +1,66 @@
-name: Bug Report
-about: Create a report to help us improve
-title: "[BUG] "
+name: 🕷️ Bug report
+description: Create a report to help us improve
 labels: bug
-assignees: ""
 body:
-
-- type: markdown
-  attributes:
-  value: |
-  Thanks for taking the time to fill out this bug report!
-- type: input
-  id: title
-  attributes:
-  label: Title
-  description: A clear and concise title for the bug
-  placeholder: Brief description of the bug
-  validations:
-  required: true
-- type: checkboxes
-  id: self-check
-  attributes:
-  label: Self Check
-  description: Please check these items before submitting
-  options:
-    - label: This is only for bug report, if you would like to ask a question, please head to [Discussions](https://github.com/bnb-chain/example-hub/discussions/categories/general).
-      required: true
-    - label: I have searched for existing issues [search for existing issues](https://github.com/bnb-chain/example-hub/issues), including closed ones.
-      required: true
-    - label: I will use English to describe the bug
-      required: true
-- type: textarea
-  id: bug-description
-  attributes:
-  label: Describe the bug
-  description: A clear and concise description of what the bug is.
-  placeholder: Please describe the bug in detail
-  validations:
-  required: true
-- type: textarea
-  id: reproduction-steps
-  attributes:
-  label: Steps to reproduce
-  description: Please provide detailed steps to reproduce the issue
-  placeholder: | 1. Go to '...' 2. Click on '....' 3. Scroll down to '....' 4. See error
-  validations:
-  required: true
-- type: textarea
-  id: expected-behavior
-  attributes:
-  label: Expected behavior
-  description: A clear and concise description of what you expected to happen.
-  placeholder: Please describe what you expected to happen
-  validations:
-  required: true
-- type: textarea
-  id: additional-context
-  attributes:
-  label: Additional context
-  description: Add any other context about the problem here.(e.g. operating system, browser, version, etc.)
-  placeholder: Add any other context about the problem here.
-  validations:
-  required: false
-- type: markdown
-  attributes:
-  value: |
-  If applicable, add screenshots to help explain your problem.
+  - type: markdown
+    attributes:
+    value: Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: title
+    attributes:
+    label: Title
+    description: A clear and concise title for the bug
+    placeholder: Brief description of the bug
+    validations:
+    required: true
+  - type: checkboxes
+    id: self-check
+    attributes:
+    label: Self Check
+    description: Please check these items before submitting
+    options:
+      - label: This is only for bug report, if you would like to ask a question, please head to [Discussions](https://github.com/bnb-chain/example-hub/discussions/categories/general).
+        required: true
+      - label: I have searched for existing issues [search for existing issues](https://github.com/bnb-chain/example-hub/issues), including closed ones.
+        required: true
+      - label: I will use English to describe the bug
+        required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+    label: Describe the bug
+    description: A clear and concise description of what the bug is.
+    placeholder: Please describe the bug in detail
+    validations:
+    required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+    label: Steps to reproduce
+    description: Please provide detailed steps to reproduce the issue
+    placeholder: |
+      1. Go to '...'
+      2. Click on '....'
+      3. Scroll down to '....'
+      4. See error
+    validations:
+    required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+    label: Expected behavior
+    description: A clear and concise description of what you expected to happen.
+    placeholder: Please describe what you expected to happen
+    validations:
+    required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+    label: Additional context
+    description: Add any other context about the problem here.(e.g. operating system, browser, version, etc.)
+    placeholder: Add any other context about the problem here.
+    validations:
+    required: false
+  - type: markdown
+    attributes:
+    value: If applicable, add screenshots to help explain your problem.
